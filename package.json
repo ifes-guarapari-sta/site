@@ -1,0 +1,44 @@
+{
+  "scripts": {
+    "build": "gulp"
+  },
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.2.0",
+    "gulp-eslint": "^6.0.0",
+    "gulp-html-entities": "0.0.3",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-terser": "^1.2.0",
+    "terser": "^4.4.0"
+  },
+  "name": "@ifes-guarapari-sta/site",
+  "description": "Site do Seminário de Tecnologias Assistivas do Ifes Guarapari",
+  "version": "0.0.1",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "material-design-icons": "^3.0.1",
+    "materialize-css": "^1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ifes-guarapari-sta/site.git"
+  },
+  "keywords": [
+    "ifes",
+    "guarapari",
+    "sta"
+  ],
+  "author": {
+    "name": "Walber Antonio Ramos Beltrame",
+    "email": "walber.beltrame@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ifes-guarapari-sta/site/issues"
+  },
+  "homepage": "https://ifes-guarapari-sta.github.io/site/"
+}
