@@ -6,7 +6,7 @@
  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
  <meta name="google" content="notranslate" />
  <meta name="viewport" content="width=device-width, initial-scale=1" />
- <meta name="description" content="I Seminário de Tecnologias Assistivas do Ifes Guarapari - O evento destina-se a exposição para a comunidade acadêmica e o público em geral dos projetos de tecnologias assistivas para celulares desenvolvidos pelos discentes na disciplina Informática do primeiro ano dos cursos técnicos integrados ao ensino médio, com avaliação e premiação dos três melhores trabalhos. Além dessa exposição, estão previstas palestras sobre o NAPNE (Núcleo de Atendimento às Pessoas com Necessidades Específicas), sobre tecnologias assistivas desenvolvidas por empresas capixabas e sobre as ações de algumas organizações sociais do município." />
+ <meta name="description" content="I Seminário de Tecnologias Assistivas do Ifes Guarapari - O evento destina-se a exposição para a comunidade acadêmica e o público em geral dos projetos de tecnologias assistivas para celulares desenvolvidos pelos discentes na disciplina Informática do primeiro ano dos cursos técnicos integrados ao ensino médio, com avaliação e premiação dos três melhores trabalhos. Além dessa exposição, estão previstas palestras sobre o NAPNE (Núcleo de Atendimento às Pessoas com Necessidades Específicas), sobre tecnologias assistivas desenvolvidas por empresas capixabas e sobre ações de entidades sociais do município de Guarapari." />
  <title>I Seminário de Tecnologias Assistivas do Ifes Guarapari</title>
  <!-- Default Shortcut Icon -->
  <link href="/2019/images/favicon.ico" rel="icon" type="image/x-icon" sizes="16x16" />
@@ -29,9 +29,66 @@
  <link rel="stylesheet" href="/2019/lib/material-design-icons/iconfont/material-icons.min.css" />
  <link rel="stylesheet" href="/2019/lib/material-design-lite/dist/material.indigo-pink.min.css">
  <style>
+  .title-section {
+   line-height: 1;
+   font-size: 48px;
+   font-weight: bold;
+   padding-top: 160px;
+  }
+  .sub-title-section {
+   line-height: 1.5;
+   font-size: 24px;
+   padding-top: 100px;
+   padding-bottom: 100px;
+  }
+  .first-section {
+   position: relative;
+   height: 800px;
+   width: auto;
+   background-size: cover;
+   background-color: rgb(235,116,137);
+   background: linear-gradient(90deg, rgba(105,171,208,0.7) 0%, rgba(235,116,137,0.7) 80%), url("/2019/images/background1.png") center 30% no-repeat;
+  }
+  .second-section * {
+   margin-left: 15%;
+   margin-right: 10%;
+   padding: 20px;
+  }
  </style>
 </head>
 <body>
+ <div class="mdl-layout mdl-js-layout">
+  <div class="mdl-layout__content">
+   <div class="first-section mdl-typography--text-center mdl-color-text--white">
+    <div class="title-section">I Seminário de<br />Tecnologias Assistivas</div>
+    <div class="sub-title-section">
+     04 de Dezembro de 2019
+     <br />
+     16:00 horas - Aberto ao público
+     <br />
+     Auditório do Ifes Guarapari
+    </div>
+    <a href="#third-section">
+     <button class="mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect">
+      <i class="material-icons">expand_more</i>
+     </button>
+    </a>
+   </div>
+   <div class="second-section mdl-typography--text-left mdl-color--blue-grey-900 mdl-color-text--white">
+    <div class="mdl-typography--font-light mdl-typography--display-1-color-contrast">Sobre o evento</div>
+    <p class="mdl-typography--font-light">
+     O evento destina-se a exposição para a comunidade acadêmica e o público em geral dos projetos de
+     tecnologias assistivas para celulares desenvolvidos pelos discentes na disciplina Informática do
+     primeiro ano dos cursos técnicos integrados ao ensino médio, com avaliação e premiação dos três
+     melhores trabalhos. Além dessa exposição, estão previstas palestras sobre o NAPNE (Núcleo de
+     Atendimento às Pessoas com Necessidades Específicas), sobre tecnologias assistivas desenvolvidas
+     por empresas capixabas e sobre ações de entidades sociais do município de Guarapari.
+    </p>
+   </div>
+   <div id="third-section" class="third-section">
+   </div>
+  </div>
+ </div>
  <script defer src="/2019/lib/material-design-lite/dist/material.min.js"></script>
 </body>
 </html>
