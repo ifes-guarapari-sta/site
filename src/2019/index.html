@@ -41,20 +41,30 @@
    padding-top: 100px;
    padding-bottom: 100px;
   }
-  .first-section {
+  .great-section {
    position: relative;
-   height: 800px;
+   min-height: 800px;
    width: auto;
-   background-size: cover;
+  }
+  .first-section {
    background-color: rgb(235,116,137);
    background: linear-gradient(90deg, rgba(105,171,208,0.7) 0%, rgba(235,116,137,0.7) 80%), url("/2019/images/background1.png") center 30% no-repeat;
+   background-size: cover;
   }
-  .second-section *, .fourth-section * {
+  .second-section *, .fourth-section *,
+  .fifth-section > .mdl-typography--display-1,
+  .fifth-section > .mdl-typography--font-light,
+  .sixth-section > .mdl-typography--display-1,
+  .sixth-section > .mdl-typography--font-light {
    margin-left: 15%;
    margin-right: 10%;
    padding: 20px;
   }
-  .third-section {
+  .fifth-section > .mdl-typography--display-1,
+  .sixth-section > .mdl-typography--display-1 {
+   padding-top: 100px;
+  }
+  .third-section, .fifth-section > .mdl-grid, .sixth-section > .mdl-grid {
    max-width: 1044px;
    margin-left: auto;
    margin-right: auto;
@@ -83,8 +93,8 @@
    background: linear-gradient(135deg, #66BB6A 0%,#1B5E20 100%);
   }
   .contact-card-title {
-   background-color: #5C6BC0;
-   background: linear-gradient(135deg, #5C6BC0 0%,#1A237E 100%);
+   background-color: #78909C;
+   background: linear-gradient(135deg, #78909C 0%,#263238 100%);
   }
   .fourth-section {
    margin-top: 40px;
@@ -92,12 +102,36 @@
    background: url("/2019/images/logo-jade-500.png") center top 40px no-repeat;
    background-size: 350px 402px;
   }
+  .fourth-section > .mdl-typography--font-light {
+   margin-bottom: 0px;
+  }
+  .fifth-section {
+   background-color: rgb(228,136,84);
+   background: linear-gradient(90deg, rgba(212,194,150,0.7) 0%, rgba(228,136,84,0.7) 80%), url("/2019/images/background3.png") center 30% no-repeat;
+   background-size: cover;
+  }
+  .sixth-section {
+   min-height: 1100px;
+   background-color: rgb(0,149,103);
+   background: linear-gradient(90deg, rgba(190,200,92,0.7) 0%, rgba(0,149,103,0.7) 80%), url("/2019/images/background2.png") center 30% no-repeat;
+   background-size: cover;
+  }
+  .footer-section {
+   padding-top: 90px;
+   justify-content: center;
+   align-items: center;
+   background: url("/2019/images/favicon-96x96.png") center top 10px no-repeat;
+   background-size: 64px 64px;
+  }
+  .footer-section > a {
+   color: white;
+  }
  </style>
 </head>
 <body>
  <div class="mdl-layout mdl-js-layout">
   <div class="mdl-layout__content">
-   <div class="first-section mdl-typography--text-center mdl-color-text--white">
+   <div class="great-section first-section mdl-typography--text-center mdl-color-text--white">
     <div class="title-section">I Seminário de<br />Tecnologias Assistivas</div>
     <div class="sub-title-section">
      04 de Dezembro de 2019
@@ -147,7 +181,7 @@
        <span class="mdl-typography--font-light mdl-typography--subhead">Apresentação sobre o NAPNE (Núcleo de Atendimento às Pessoas com Necessidades Específicas), sobre a APAE e Pestalozzi de Guarapari e sobre o projeto Acamados.</span>
       </div>
       <div class="mdl-card__actions">
-       <a class="mdl-button mdl-js-button mdl-color-text--blue-grey-900 mdl-typography--text-uppercase" href="">
+       <a class="mdl-button mdl-js-button mdl-color-text--blue-grey-900 mdl-typography--text-uppercase" href="#fifth-section">
         Mais
         <i class="material-icons">chevron_right</i>
        </a>
@@ -161,7 +195,7 @@
        <span class="mdl-typography--font-light mdl-typography--subhead">Exposição dos projetos de tecnologias assistivas para celulares desenvolvidos na disciplina Informática, com avaliação e premiação dos três melhores trabalhos. Ajude a escolher as ideias.</span>
       </div>
       <div class="mdl-card__actions">
-       <a class="mdl-button mdl-js-button mdl-color-text--blue-grey-900 mdl-typography--text-uppercase" href="">
+       <a class="mdl-button mdl-js-button mdl-color-text--blue-grey-900 mdl-typography--text-uppercase" href="#sixth-section">
         Mais
         <i class="material-icons">chevron_right</i>
        </a>
@@ -175,7 +209,7 @@
        <span class="mdl-typography--font-light mdl-typography--subhead">Para maiores informações sobre o evento, mensagens, pedidos, dúvidas, reclamações ou sugestões, entre em contato com a equipe de suporte e organização do seminário.</span>
       </div>
       <div class="mdl-card__actions">
-       <a class="mdl-button mdl-js-button mdl-color-text--blue-grey-900 mdl-typography--text-uppercase" href="">
+       <a class="mdl-button mdl-js-button mdl-color-text--blue-grey-900 mdl-typography--text-uppercase" href="#footer-section">
         Mais
         <i class="material-icons">chevron_right</i>
        </a>
@@ -197,6 +231,153 @@
      (Apae) do Espírito Santo - além de estar em processo de implantação em outros estados.
     </p>
    </div>
+   <div id="fifth-section" class="great-section fifth-section">
+    <div class="mdl-typography--font-light mdl-typography--display-1 mdl-color-text--orange-900">Apresentação</div>
+    <p class="mdl-typography--font-light">
+     O objetivo de cada apresentação é socializar experiências, exposição de argumentos, ideas, práticas,
+     experiências, oportunidade de dialogar sobre conhecimentos adquiridos no desenvolvimento das atividades
+     voltadas as práticas de inclusão de pessoas com necessidades específicas, proporcionando pesquisas,
+     debates, sistematização de fatos, raciocínio e reflexão em torno do assunto, como um momento de troca
+     de informações, construção compartilhada, aproximação e colaboração.
+    </p>
+    <div class="mdl-grid">
+     <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+      <div class="presentation-card-title mdl-card__title">
+       <h4 class="mdl-card__title-text mdl-color-text--white">Napne</h4>
+      </div>
+      <div class="mdl-card__supporting-text">
+       <span class="mdl-typography--font-light mdl-typography--subhead">Informações sobre NAPNE (Núcleo de Atendimento às Pessoas com Necessidades Específicas) do Ifes Guarapari, setor que articula as ações inclusivas no âmbito escolar.</span>
+      </div>
+      <div class="mdl-card__actions">
+       <a class="mdl-button mdl-js-button mdl-color-text--blue-grey-900 mdl-typography--text-uppercase" href="https://guarapari.ifes.edu.br/" target="_blank">
+        Mais
+        <i class="material-icons">chevron_right</i>
+       </a>
+      </div>
+     </div>
+     <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+      <div class="presentation-card-title mdl-card__title">
+       <h4 class="mdl-card__title-text mdl-color-text--white">Apae</h4>
+      </div>
+      <div class="mdl-card__supporting-text">
+       <span class="mdl-typography--font-light mdl-typography--subhead">Informações sobre APAE (Associação de Pais e Amigos dos Excepcionais) de Guarapari, organização social que oferece atenção integral à pessoa com deficiência múltipla.</span>
+      </div>
+      <div class="mdl-card__actions">
+       <a class="mdl-button mdl-js-button mdl-color-text--blue-grey-900 mdl-typography--text-uppercase" href="https://www.apaees.org.br/guarapari/" target="_blank">
+        Mais
+        <i class="material-icons">chevron_right</i>
+       </a>
+      </div>
+     </div>
+     <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+      <div class="presentation-card-title mdl-card__title">
+       <h4 class="mdl-card__title-text mdl-color-text--white">Pestalozzi</h4>
+      </div>
+      <div class="mdl-card__supporting-text">
+       <span class="mdl-typography--font-light mdl-typography--subhead">Informações sobre Pestalozzi (Associação Pestalozzi de Guarapari), organização social com atuação em assistência social, saúde e educação inclusiva.</span>
+      </div>
+      <div class="mdl-card__actions">
+       <a class="mdl-button mdl-js-button mdl-color-text--blue-grey-900 mdl-typography--text-uppercase" href="http://fenapestalozzi.org.br/es/guarapari" target="_blank">
+        Mais
+        <i class="material-icons">chevron_right</i>
+       </a>
+      </div>
+     </div>
+     <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+      <div class="presentation-card-title mdl-card__title">
+       <h4 class="mdl-card__title-text mdl-color-text--white">Acamados</h4>
+      </div>
+      <div class="mdl-card__supporting-text">
+       <span class="mdl-typography--font-light mdl-typography--subhead">Informações sobre projeto em parceria com o LEDS (Laboratório de Extensão em Desenvolvimento de Soluções), com objetivo de auxiliar o banho de pessoas acamadas.</span>
+      </div>
+      <div class="mdl-card__actions">
+       <a class="mdl-button mdl-js-button mdl-color-text--blue-grey-900 mdl-typography--text-uppercase" href="https://leds.guarapari.ifes.edu.br/" target="_blank">
+        Mais
+        <i class="material-icons">chevron_right</i>
+       </a>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div id="sixth-section" class="great-section sixth-section">
+    <div class="mdl-typography--font-light mdl-typography--display-1 mdl-color-text--white">Concurso</div>
+    <p class="mdl-typography--font-light mdl-color-text--white">
+     Exposição para a comunidade acadêmica e o público em geral dos projetos de tecnologias assistivas para
+     celulares desenvolvidos pelos discentes na disciplina Informática do primeiro ano dos cursos técnicos
+     integrados ao ensino médio, com avaliação e premiação dos três melhores trabalhos. Ajude a escolher as
+     ideias, em que as três com maior número de curtidas estarão concorrendo a premiações de vales presentes
+     digitais, a partir da mostra dos trabalhos no seminário, que serão avaliados por especialistas.
+    </p>
+    <div class="mdl-grid">
+     <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+      <div class="competition-card-title mdl-card__title">
+       <h4 class="mdl-card__title-text mdl-color-text--white"></h4>
+      </div>
+      <div class="mdl-card__supporting-text">
+       <span class="mdl-typography--font-light mdl-typography--subhead"></span>
+      </div>
+      <div class="mdl-card__actions">
+      </div>
+     </div>
+     <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+      <div class="competition-card-title mdl-card__title">
+       <h4 class="mdl-card__title-text mdl-color-text--white"></h4>
+      </div>
+      <div class="mdl-card__supporting-text">
+       <span class="mdl-typography--font-light mdl-typography--subhead"></span>
+      </div>
+      <div class="mdl-card__actions">
+      </div>
+     </div>
+     <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+      <div class="competition-card-title mdl-card__title">
+       <h4 class="mdl-card__title-text mdl-color-text--white"></h4>
+      </div>
+      <div class="mdl-card__supporting-text">
+       <span class="mdl-typography--font-light mdl-typography--subhead"></span>
+      </div>
+      <div class="mdl-card__actions">
+      </div>
+     </div>
+    </div>
+    <div class="mdl-grid">
+     <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+      <div class="competition-card-title mdl-card__title">
+       <h4 class="mdl-card__title-text mdl-color-text--white"></h4>
+      </div>
+      <div class="mdl-card__supporting-text">
+       <span class="mdl-typography--font-light mdl-typography--subhead"></span>
+      </div>
+      <div class="mdl-card__actions">
+      </div>
+     </div>
+     <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+      <div class="competition-card-title mdl-card__title">
+       <h4 class="mdl-card__title-text mdl-color-text--white"></h4>
+      </div>
+      <div class="mdl-card__supporting-text">
+       <span class="mdl-typography--font-light mdl-typography--subhead"></span>
+      </div>
+      <div class="mdl-card__actions">
+      </div>
+     </div>
+     <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+      <div class="competition-card-title mdl-card__title">
+       <h4 class="mdl-card__title-text mdl-color-text--white"></h4>
+      </div>
+      <div class="mdl-card__supporting-text">
+       <span class="mdl-typography--font-light mdl-typography--subhead"></span>
+      </div>
+      <div class="mdl-card__actions">
+      </div>
+     </div>
+    </div>
+   </div>
+   <footer id="footer-section" class="footer-section mdl-mini-footer mdl-color--blue-grey-900">
+    <a href="mailto:walber.beltrame@ifes.edu.br" target="_top">
+     walber.beltrame@ifes.edu.br
+    </a>
+   </footer>
   </div>
  </div>
  <script defer src="/2019/lib/material-design-lite/dist/material.min.js"></script>
