@@ -3,10 +3,13 @@
   "public": "public",
   "headers": [ {
    "source" : "**/*.@(css|js|json|png|ico)",
-   "headers" : [ {
-    "key" : "Access-Control-Allow-Origin",
-    "value" : "*"
-   }]}, {
+   "headers" : [
+    {"key" : "Access-Control-Allow-Origin", "value" : "*"},
+    {"key": "X-Content-Type-Options", "value": "nosniff"},
+    {"key": "X-Frame-Options", "value": "ALLOW-FROM https://www.facebook.com"},
+    {"key": "X-UA-Compatible", "value": "ie=edge"},
+    {"key": "X-XSS-Protection", "value": "1; mode=block"}
+   ]}, {
    "source" : "**/*.@(css|js|json|png|ico)",
    "headers" : [ {
     "key" : "Cache-Control",
