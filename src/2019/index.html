@@ -61,13 +61,17 @@
   .fifth-section > .mdl-typography--font-light,
   .sixth-section > .mdl-typography--display-1,
   .sixth-section > .mdl-typography--headline,
-  .sixth-section > .mdl-typography--font-light {
+  .sixth-section > .mdl-typography--font-light,
+  .seventh-section > .mdl-typography--display-1,
+  .seventh-section > .mdl-typography--headline,
+  .seventh-section > .mdl-typography--font-light {
    margin-left: 15%;
    margin-right: 10%;
    padding: 20px;
   }
   .fifth-section > .mdl-typography--display-1,
-  .sixth-section > .mdl-typography--display-1 {
+  .sixth-section > .mdl-typography--display-1,
+  .seventh-section > .mdl-typography--display-1 {
    padding-top: 100px;
   }
   .third-section, .fifth-section > .mdl-grid, .sixth-section > .mdl-grid {
@@ -108,7 +112,8 @@
    background: url("/2019/images/logo-jade-500.png") center top 40px no-repeat;
    background-size: 350px 402px;
   }
-  .fourth-section > .mdl-typography--font-light {
+  .fourth-section > .mdl-typography--font-light,
+  .seventh-section > .mdl-typography--font-light {
    margin-bottom: 0px;
   }
   .fifth-section {
@@ -122,6 +127,9 @@
    background: linear-gradient(90deg, rgba(190,200,92,0.7) 0%, rgba(0,149,103,0.7) 80%), url("/2019/images/background2.png") center 30% no-repeat;
    background-size: cover;
   }
+  .seventh-section {
+   padding-bottom: 50px;
+  }
   .footer-section {
    padding-top: 90px;
    justify-content: center;
@@ -129,8 +137,12 @@
    background: url("/2019/images/favicon-96x96.png") center top 10px no-repeat;
    background-size: 64px 64px;
   }
-  .footer-section > a {
+  .seventh-section > .mdl-typography--font-light > a, .footer-section > a {
    color: white;
+  }
+  video {
+   width: 100%;
+   height: auto;
   }
  </style>
 </head>
@@ -389,6 +401,24 @@
       </div>
      </div>
     </div>
+   </div>
+   <div id="seventh-section" class="seventh-section mdl-color--green-900 mdl-color-text--white">
+    <div class="mdl-typography--font-light mdl-typography--display-1">Finalistas</div>
+    <p class="mdl-typography--font-light">
+     Os três trabalhos finalistas terão dez minutos para apresentar o projeto a banca avaliadora.
+     Serão apresentadas as tecnologias desenvolvidas durante o segundo semestre, todas voltadas
+     para a inclusão e facilitação da rotina de pessoas com algum tipo de necessidade específica.
+     Para mais informações, acesse o site de cada projeto:
+     <a href="http://rodasacessiveis.c1.biz/" target="_blank">Rodas Acessíveis</a>,
+     <a href="http://ablecity.c1.biz/" target="_blank">Able City</a>,
+     <a href="http://sinaisverdes.c1.biz/" target="_blank">Sinais Verdes</a>.
+    </p>
+    <p class="mdl-typography--font-light">
+     <video controls>
+      <source src="2019/images/video.webm" type="video/webm">
+      O navegador não suporta o elemento <code>video</code>.
+     </video>
+    </p>
    </div>
    <footer id="footer-section" class="footer-section mdl-mini-footer mdl-color--blue-grey-900">
     <a href="https://sigeventos.ifes.edu.br/evento/STAIG2019/contato/view" target="_blank">
