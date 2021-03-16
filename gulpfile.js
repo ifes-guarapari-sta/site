@@ -36,7 +36,7 @@ task("lib/material-design-lite", () => {
  * 
  */
 task("images", () => {
-  return src("src/images/*.*")
+  return src("src/images/*")
    .pipe(dest("public/images/"));
 });
 
