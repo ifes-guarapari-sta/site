@@ -10,24 +10,24 @@ const rename = require("gulp-rename");
  */
 task("lib/material-design", () => {
   return src("node_modules/material-design-icons/iconfont/material-icons.css")
-   .pipe(csso())
-   .pipe(rename("material-icons.min.css"))
-   .pipe(dest("public/2019/lib/material-design-icons/iconfont/"));
+    .pipe(csso())
+    .pipe(rename("material-icons.min.css"))
+    .pipe(dest("public/lib/material-design-icons/iconfont/"));
 });
 task("lib/material-design-icons", () => {
   return src(["node_modules/material-design-icons/iconfont/MaterialIcons-Regular.eot",
-              "node_modules/material-design-icons/iconfont/MaterialIcons-Regular.ijmap",
-              "node_modules/material-design-icons/iconfont/MaterialIcons-Regular.svg",
-              "node_modules/material-design-icons/iconfont/MaterialIcons-Regular.ttf",
-              "node_modules/material-design-icons/iconfont/MaterialIcons-Regular.woff",
-              "node_modules/material-design-icons/iconfont/MaterialIcons-Regular.woff2"])
-   .pipe(dest("public/2019/lib/material-design-icons/iconfont/"));
+    "node_modules/material-design-icons/iconfont/MaterialIcons-Regular.ijmap",
+    "node_modules/material-design-icons/iconfont/MaterialIcons-Regular.svg",
+    "node_modules/material-design-icons/iconfont/MaterialIcons-Regular.ttf",
+    "node_modules/material-design-icons/iconfont/MaterialIcons-Regular.woff",
+    "node_modules/material-design-icons/iconfont/MaterialIcons-Regular.woff2"])
+    .pipe(dest("public/lib/material-design-icons/iconfont/"));
 });
 task("lib/material-design-lite", () => {
   return src(["node_modules/material-design-lite/dist/material.min.js",
-              "node_modules/material-design-lite/dist/material.min.js.map",
-              "node_modules/material-design-lite/dist/material.indigo-pink.min.css"])
-   .pipe(dest("public/2019/lib/material-design-lite/dist/"));
+    "node_modules/material-design-lite/dist/material.min.js.map",
+    "node_modules/material-design-lite/dist/material.indigo-pink.min.css"])
+    .pipe(dest("public/lib/material-design-lite/dist/"));
 });
 
 /**
@@ -37,7 +37,7 @@ task("lib/material-design-lite", () => {
  */
 task("images", () => {
   return src("src/images/*")
-   .pipe(dest("public/images/"));
+    .pipe(dest("public/images/"));
 });
 
 /**
@@ -46,9 +46,9 @@ task("images", () => {
  * 
  */
 task("html", () => {
- return src("src/2019/*.html")
-  .pipe(htmlmin({collapseWhitespace: true}))
-  .pipe(dest("public/2019/"));
+  return src("src/2019/*.html")
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(dest("public/2019/"));
 });
 
 /**
@@ -57,9 +57,9 @@ task("html", () => {
  * 
  */
 task("index", () => {
- return src("src/index.html")
-  .pipe(htmlmin({collapseWhitespace: true}))
-  .pipe(dest("public/"));
+  return src("src/index.html")
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(dest("public/"));
 });
 
 /**
@@ -67,4 +67,4 @@ task("index", () => {
  * Default task.
  * 
  */
-task("default", series(parallel("lib/material-design","lib/material-design-icons","lib/material-design-lite"), "images", "html", "index"));
+task("default", series(parallel("lib/material-design", "lib/material-design-icons", "lib/material-design-lite"), "images", "html", "index"));
