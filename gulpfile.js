@@ -39,14 +39,6 @@ task("images", () => {
   return src("src/images/*.*")
    .pipe(dest("public/images/"));
 });
-task("images/2019", () => {
-  return src("src/2019/images/*.*")
-   .pipe(dest("public/2019/images/"));
-});
-task("images/2021", () => {
-  return src("src/2021/images/*.*")
-   .pipe(dest("public/2021/images/"));
-});
 
 /**
  * 
