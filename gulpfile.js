@@ -35,8 +35,12 @@ task("lib/material-design-lite", () => {
  * Task of copy and paste images public files.
  * 
  */
+task("icon", function () {
+  return src("images/favicon.ico")
+    .pipe(dest("public/"));
+});
 task("images", () => {
-  return src("src/images/*")
+  return src("images/**/*.*")
     .pipe(dest("public/images/"));
 });
 
@@ -66,4 +70,4 @@ task("html/2021", () => {
  * Default task.
  * 
  */
-task("default", series(parallel("lib/material-design", "lib/material-design-icons", "lib/material-design-lite"), "images", parallel("html", "html/2019", "html/2021")));
+task("default", series(parallel("lib/material-design", "lib/material-design-icons", "lib/material-design-lite"), parallel("icon", "images"), parallel("html", "html/2019", "html/2021")));

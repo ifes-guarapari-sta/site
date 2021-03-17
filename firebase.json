@@ -2,11 +2,11 @@
  "hosting": {
   "public": "public",
   "headers": [ {
-   "source" : "**/*.@(css|js|json|png|ico)",
-   "headers" : [{
-    "key" : "Access-Control-Allow-Origin",
-    "value" : "*"
-   }]}, {
+   "source": "**/*.@(eot|otf|ttf|ttc|woff|font.css)",
+   "headers": [ {
+    "key": "Access-Control-Allow-Origin",
+    "value": "*"
+  }]}, {
    "source" : "**/*.@(css|js|json|png|ico)",
    "headers" : [ {
     "key" : "Cache-Control",
