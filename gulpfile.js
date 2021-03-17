@@ -46,20 +46,19 @@ task("images", () => {
  * 
  */
 task("html", () => {
+  return src("src/*.html")
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(dest("public/"));
+});
+task("html/2019", () => {
   return src("src/2019/*.html")
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(dest("public/2019/"));
 });
-
-/**
- * 
- * Task of build from source and generate index public file.
- * 
- */
-task("index", () => {
-  return src("src/index.html")
+task("html/2021", () => {
+  return src("src/2021/*.html")
     .pipe(htmlmin({ collapseWhitespace: true }))
-    .pipe(dest("public/"));
+    .pipe(dest("public/2021/"));
 });
 
 /**
@@ -67,4 +66,4 @@ task("index", () => {
  * Default task.
  * 
  */
-task("default", series(parallel("lib/material-design", "lib/material-design-icons", "lib/material-design-lite"), "images", "html", "index"));
+task("default", series(parallel("lib/material-design", "lib/material-design-icons", "lib/material-design-lite"), "images", parallel("html", "html/2019", "html/2021")));
