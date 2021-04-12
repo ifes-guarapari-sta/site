@@ -604,8 +604,17 @@
   <script defer src="/lib/material-design-lite/dist/material.min.js"></script>
   <script>
     fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vTFDymo45iZ4R1vawJYTuFT-1KTcHQBijx6G816ZGxSNQnSki33mnetrSEaJleNf2dlRK6ibTH9EMyN/pub?gid=1314165647&single=true&output=csv')
-      .then(response => response.json())
-      .then(data => console.log(data));
+      .then(response => response.text())
+      .then(data => {
+        let values = data.split(/\r?\n/);
+        document.getElementById("app-idosos").innerText = values[0];
+        document.getElementById("libras-tech").innerText = values[1];
+        document.getElementById("desmutando").innerText = values[2];
+        document.getElementById("manual-de-inclusao").innerText = values[3];
+        document.getElementById("autonomus").innerText = values[4];
+        document.getElementById("xadrez-para-cegos").innerText = values[5];
+        document.getElementById("lumos").innerText = values[6];
+      });
   </script>
 </body>
 
