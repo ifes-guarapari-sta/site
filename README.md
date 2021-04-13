@@ -6,6 +6,10 @@ O evento destina-se a exposição para a comunidade acadêmica e o público em g
 Palestra do empresário Ronaldo Cohin, criador do JADE Autism, ideia ganhadora de vários prêmios e selecionada para o programa Planeta Startup da Band.
 [Site do evento](https://ifes-guarapari-sta.web.app/2019)
 
+## Edição 2021
+Palestra com idealizadores de projetos de tecnologias assistivas de várias instituições brasileiras, como o 123 Autismo, o Era Inclusiva e o Austic.
+[Site do evento](https://ifes-guarapari-sta.web.app/2021)
+
 ## Changelog
 Alterações detalhadas para cada versão estão documentadas em [release notes](https://github.com/ifes-guarapari-sta/site/releases).
 
