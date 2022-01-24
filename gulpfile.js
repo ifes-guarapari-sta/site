@@ -59,6 +59,11 @@ task("html/2019", () => {
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(dest("public/2019/"));
 });
+task("html/2020", () => {
+  return src("src/2020/*.html")
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(dest("public/2020/"));
+});
 task("html/2021", () => {
   return src("src/2021/*.html")
     .pipe(htmlmin({ collapseWhitespace: true }))
@@ -70,4 +75,4 @@ task("html/2021", () => {
  * Default task.
  * 
  */
-task("default", series(parallel("lib/material-design", "lib/material-design-icons", "lib/material-design-lite"), parallel("icon", "images"), parallel("html", "html/2019", "html/2021")));
+task("default", series(parallel("lib/material-design", "lib/material-design-icons", "lib/material-design-lite"), parallel("icon", "images"), parallel("html", "html/2019", "html/2020", "html/2021")));
