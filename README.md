@@ -11,7 +11,7 @@ Palestra com idealizadores de projetos de tecnologias assistivas de várias inst
 [Site do evento](https://ifes-guarapari-sta.web.app/2020)
 
 ## Edição 2021
-Palestra com idealizadores de projetos de tecnologias assistivas de várias instituições brasileiras, como o ...
+Palestra com idealizadores da Rehabilite Game, spin-off do Laboratório de Neuroinovação Tecnológica e Mapeamento Cerebral (NiTLab/UFDPar).
 [Site do evento](https://ifes-guarapari-sta.web.app/2021)
 
 ## Changelog
